@@ -1,22 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import gfm from "remark-gfm";
 
-import mainMd from "../docs/Main.md";
+import mainMd from "../../docs/Main.md";
 
 function MainPage() {
-  const [markdownText, setMarkdownText] = useState("");
+  let [markdownText, setMarkdownText] = useState(null);
 
-  
-  let testMd = "";
-
-  fetch(mainMd)
-    .then((response) => response.text())
-    .then((data) => (testMd = data));
+  useEffect(() => {
+    fetch(mainMd)
+      .then((response) => response.text())
+      .then((data) => setMarkdownText(data));
+  }, [])
 
   return (
     <ReactMarkdown remarkPlugins={[gfm]}>
-      *React-Markdown* now supports ~strikethrough~. Thanks to gfm plugin.
+      {markdownText}
     </ReactMarkdown>
   );
 }
