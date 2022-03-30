@@ -1,20 +1,21 @@
-import { Container, ListGroup } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+
+import { ListGroup } from "react-bootstrap";
 
 function NavMenu() {
   return (
-    <Container className="container-sm">
-      <ListGroup defaultActiveKey="#link1">
-        <ListGroup.Item action href="#link1">
-          Link 1
+    <ListGroup defaultActiveKey="main_page">
+      <NavLink end to="main_page">
+        <ListGroup.Item action href="main_page">
+          Main Page
         </ListGroup.Item>
-        <ListGroup.Item action href="#link2">
-          Link 2
+      </NavLink>
+      <NavLink end to="another_page">
+        <ListGroup.Item action href="another_page">
+          Another Page
         </ListGroup.Item>
-        <ListGroup.Item action href="#link3">
-          Link 3
-        </ListGroup.Item>
-      </ListGroup>
-    </Container>
+      </NavLink>
+    </ListGroup>
   );
 }
 
