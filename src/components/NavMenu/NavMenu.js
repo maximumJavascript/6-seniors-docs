@@ -5,14 +5,14 @@ import { ListGroup } from "react-bootstrap";
 function NavMenu() {
   return (
     <aside>
-      <ListGroup>
+      <ListGroup defaultActiveKey="/" as="ul">
         <NavLink end to="/">
-          <ListGroup.Item >
+          <ListGroup.Item action href="/" as="li">
             Main Page
           </ListGroup.Item>
         </NavLink>
         <NavLink end to="another_page">
-          <ListGroup.Item >
+          <ListGroup.Item action href="another_page" as="li">
             Another Page
           </ListGroup.Item>
         </NavLink>
