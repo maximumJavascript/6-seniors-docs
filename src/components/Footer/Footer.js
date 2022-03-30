@@ -5,10 +5,12 @@ function Footer() {
   const secondLine = `Documentation built with React-Markdown.`;
 
   return (
-    <Container className="d-flex flex-column align-items-center">
-      <p>{firstLine}</p>
-      <p>{secondLine}</p>
-    </Container>
+    <footer>
+      <Container className="d-flex flex-column align-items-center">
+        <p>{firstLine}</p>
+        <p>{secondLine}</p>
+      </Container>
+    </footer>
   );
 }
 
