@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 function NavMenu() {
   const active = ({ isActive }) => ({
-    className: isActive ? "active" : "inherit",
+    className: isActive ? 'active' : 'inherit',
   });
 
   return (

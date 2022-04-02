@@ -1,8 +1,8 @@
-import { Container } from "react-bootstrap";
+import { Container } from 'react-bootstrap';
 
 function Footer() {
-  const firstLine = `Copyright © 2022, Maintained by the 6 Seniors.`;
-  const secondLine = `Documentation built with React-Markdown.`;
+  const firstLine = 'Copyright © 2022, Maintained by the 6 Seniors.';
+  const secondLine = 'Documentation built with React-Markdown.';
 
   return (
     <footer>
