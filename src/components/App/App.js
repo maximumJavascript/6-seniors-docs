@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import { AnotherPage, MainPage } from "../pages";
+import { AnotherPage, MainPage } from "../Pages";
 import Header from "../Header/Header";
 import NavMenu from "../NavMenu/NavMenu";
 import Footer from "../Footer/Footer";
