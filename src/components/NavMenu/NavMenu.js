@@ -1,22 +1,26 @@
 import { NavLink } from "react-router-dom";
 
-import { ListGroup } from "react-bootstrap";
-
 function NavMenu() {
+  const active = ({ isActive }) => ({
+    className: isActive ? "active" : "inherit",
+  });
+
   return (
     <aside>
-      <ListGroup defaultActiveKey="/" as="ul">
-        <NavLink end to="/">
-          <ListGroup.Item action href="/" as="li">
-            Main Page
-          </ListGroup.Item>
+      <div class="list-group">
+        <NavLink
+          to="/"
+          className={`list-group-item list-group-item-action ${active}`}
+        >
+          Main Page
         </NavLink>
-        <NavLink end to="another_page">
-          <ListGroup.Item action href="another_page" as="li">
-            Another Page
-          </ListGroup.Item>
+        <NavLink
+          to="another_page"
+          className={`list-group-item list-group-item-action ${active}`}
+        >
+          Another Page
         </NavLink>
-      </ListGroup>
+      </div>
     </aside>
   );
 }
