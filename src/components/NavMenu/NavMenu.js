@@ -7,7 +7,7 @@ function NavMenu() {
 
   return (
     <aside>
-      <div class="list-group">
+      <div className="list-group">
         <NavLink
           to="/"
           className={`list-group-item list-group-item-action ${active}`}

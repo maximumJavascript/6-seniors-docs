@@ -8,10 +8,12 @@ import {
   Button,
 } from "react-bootstrap";
 
+import "./header.scss"
+
 function Header() {
   return (
     <header>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" className="fixed-top">
         <Container>
           <Navbar.Brand href="#">Markdown Docs</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
