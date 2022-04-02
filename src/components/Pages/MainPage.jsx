@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import ReactMarkdown from "react-markdown";
-import gfm from "remark-gfm";
+import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
 
-import mainMdPage from "../../docs/Main.md";
+import mainMdPage from '../../docs/Main.md';
 
 function MainPage() {
-  let [markdownContent, setMarkdownContent] = useState(null);
+  const [markdownContent, setMarkdownContent] = useState(null);
 
   useEffect(() => {
     fetch(mainMdPage)

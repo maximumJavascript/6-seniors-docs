@@ -19,14 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint \"./src/**/*.ts{,x}\" --max-warnings=0",
-    "format": "eslint \"./src/**/*.ts{,x}\" --fix"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "lint": "eslint \"./src/**/*.js{,x}\" --max-warnings=0",
+    "format": "eslint \"./src/**/*.js{,x}\" --fix"
   },
   "browserslist": {
     "production": [

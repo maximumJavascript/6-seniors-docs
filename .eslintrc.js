@@ -2,6 +2,8 @@ const prettierConfig = require('./.prettierrc.json');
 
 module.exports = {
 	extends: [
+		'react-app',
+		'react-app/jest',
 		'airbnb',
 		'airbnb/hooks',
 		'plugin:prettier/recommended',
