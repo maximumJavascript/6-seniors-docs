@@ -9,7 +9,7 @@ module.exports = {
 		'plugin:prettier/recommended',
 	],
 	ignorePatterns: [
-		'.eslintrc.js',
+		'.eslintrc.new.js',
 	],
 	plugins: ['react', 'jest'],
 	env: {
