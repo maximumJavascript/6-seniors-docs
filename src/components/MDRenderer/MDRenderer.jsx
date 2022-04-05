@@ -1,49 +1,49 @@
-import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
+import css from './MDRenderer.module.scss';
+import useTextDownloadByUrl from './useTextDownloadByUrl';
+import cn from 'classnames';
 
 const mdPluginsProp = [gfm];
 
-export function fetchText(url) {
-  return fetch(url).then((response) => response.text());
+function MDContentRenderer({ mdContent, isError, isLoading }) {
+  const mdContentToRender = isError
+    ? '#### Error while loading markdown'
+    : isLoading && !mdContent
+    ? '#### Loading...'
+    : mdContent;
+
+  const isLoadingNext = isLoading && !!mdContent;
+
+  return (
+    <ReactMarkdown
+      className={cn(css.md, isLoadingNext && css.transition)}
+      remarkPlugins={mdPluginsProp}
+    >
+      {mdContentToRender}
+    </ReactMarkdown>
+  );
 }
 
-function MDRenderer({ mdPageUrl }) {
-  const [markdownContent, setMarkdownContent] = useState('');
-  const [markdownError, setMarkdownError] = useState(null);
+function MDRenderer({
+  mdContent,
+  mdPageUrl,
+  VisualComponent = MDContentRenderer,
+}) {
+  const { isError, isLoading, result } = useTextDownloadByUrl({
+    resourceUrl: mdPageUrl,
+  });
 
-  useEffect(() => {
-    let isCancelled = false;
-
-    fetchText(mdPageUrl)
-      .then((data) => {
-        if (isCancelled) return;
-        setMarkdownContent(data);
-      })
-      .catch((error) => {
-        if (isCancelled) return;
-        setMarkdownError(error);
-      });
-
-    return () => {
-      isCancelled = true;
-      setMarkdownContent(null);
-      setMarkdownError(null);
-    };
-  }, [mdPageUrl]);
-
-  if (markdownError) {
-    return 'Error while loading markdown';
-  }
-
-  if (!markdownContent) {
-    return 'Loading...';
+  if (mdContent) {
+    return <VisualComponent mdContent={mdContent} />;
   }
 
   return (
-    <ReactMarkdown remarkPlugins={mdPluginsProp}>
-      {markdownContent}
-    </ReactMarkdown>
+    <VisualComponent
+      mdContent={result}
+      isLoading={isLoading}
+      isError={isError}
+    />
   );
 }
 

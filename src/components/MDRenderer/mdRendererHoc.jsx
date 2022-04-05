@@ -1,5 +1,7 @@
 import MDRenderer from './MDRenderer';
 
 export default function mdRendererHoc(mdFileUrl) {
-  return () => <MDRenderer mdPageUrl={mdFileUrl} />;
+  return function MDRendererHocResult() {
+    return <MDRenderer mdPageUrl={mdFileUrl} />;
+  };
 }
