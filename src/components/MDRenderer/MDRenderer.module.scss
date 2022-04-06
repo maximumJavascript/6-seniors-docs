@@ -1,0 +1,24 @@
+.md {
+  min-height: 60vh;
+  max-width: 800px;
+  transition: opacity 0.5s linear;
+}
+
+.transition {
+  opacity: 0.5;
+  //animation: opacityTransition 1s ease-in-out infinite;
+}
+
+@keyframes opacityTransition {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}

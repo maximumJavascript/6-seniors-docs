@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
 
-function NavMenu() {
+function NavMenu({ className }) {
   const active = ({ isActive }) => ({
     className: isActive ? 'active' : 'inherit',
   });
 
   return (
-    <aside>
+    <aside className={className}>
       <div className="list-group">
         <NavLink
           to="/"
@@ -14,8 +14,16 @@ function NavMenu() {
         >
           Main Page
         </NavLink>
+
         <NavLink
-          to="another_page"
+          to="page-terms"
+          className={`list-group-item list-group-item-action ${active}`}
+        >
+          Terms
+        </NavLink>
+
+        <NavLink
+          to="page-another"
           className={`list-group-item list-group-item-action ${active}`}
         >
           Another Page

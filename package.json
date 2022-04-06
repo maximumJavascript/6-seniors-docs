@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "classnames": "^2.3.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.2.2",
     "react-dom": "^17.0.2",
@@ -11,8 +12,8 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "remark-gfm": "^3.0.1",
-    "web-vitals": "^2.1.4",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,17 +36,16 @@
     ]
   },
   "devDependencies": {
-    "eslint": "7.28.0",
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-config-react-app": "6.0.0",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-prettier": "3.4.0",
-    "eslint-plugin-react": "7.24.0",
-    "prettier": "^2.3.1",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
-    "@types/react-router-dom": "^5.3.3"
+    "@types/react-router-dom": "^5.3.3",
+    "eslint": "8.12.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-react-app": "7.0.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.29.4",
+    "prettier": "^2.3.1"
   }
 }
