@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 function NavMenu({ className }) {
   const active = ({ isActive }) => ({
-    className: isActive ? 'active' : 'inherit',
+    className: isActive ? 'active' : null,
   });
 
   return (

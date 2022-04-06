@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route
               index
-              ath="/"
+              path="/"
               element={<MDRenderer mdPageUrl={mdPageMain} />}
             />
 
