@@ -8,11 +8,11 @@ import {
   Button,
 } from 'react-bootstrap';
 
-import './header.scss';
+import css from './Header.module.scss';
 
 function Header() {
   return (
-    <header>
+    <header className={css.header}>
       <Navbar bg="light" expand="lg" className="fixed-top">
         <Container>
           <Navbar.Brand href="#">Markdown Docs</Navbar.Brand>
