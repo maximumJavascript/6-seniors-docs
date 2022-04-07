@@ -25,7 +25,7 @@
     "---------- 🎁 ----------": "",
     "generate:all": "npm run generate:build && npm run generate:lint",
     "generate:build": "node ./src/scripts/makeJsFile.js",
-    "generate:lint": "eslint --fix \"./src/generated/generated.js\" --max-warnings=0",
+    "generate:lint": "eslint --fix \"./src/generated/*.js\" --max-warnings=0",
     "---------- 🪑 ----------": "",
     "deploy": "npm run generate:all && npm run build"
   },

@@ -1,14 +1,11 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from '../Header/Header';
 import NavMenu from '../NavMenu/NavMenu';
 import Footer from '../Footer/Footer';
 import { Container } from 'react-bootstrap';
 import MDRenderer from '../MDRenderer/MDRenderer';
-import routesData from '../../generated/generated';
+import mdRoutesData from '../../generated/mdRoutesData';
 import css from './App.module.scss';
-
-import mdPageMain from '../../docs/Main.md';
-import mdPageTerms from '../../docs/forStudent/terms.md';
 
 function App() {
   return (
@@ -20,31 +17,22 @@ function App() {
 
         <section>
           <Routes>
-            <Route
-              index
-              path="/"
-              element={<MDRenderer mdPageUrl={mdPageMain} />}
-            />
-
-            <Route
-              path="page-terms"
-              element={<MDRenderer mdPageUrl={mdPageTerms} />}
-            />
+            {mdRoutesData.map((x) => {
+              return (
+                <Route
+                  key={x.appRoute}
+                  path={x.appRoute}
+                  element={<MDRenderer mdPageUrl={x.fileUrl} />}
+                />
+              );
+            })}
 
             <Route
               path="page-another"
               element={<MDRenderer mdContent="Text to test the page content" />}
             />
 
-            {routesData.map((x) => {
-              return (
-                <Route
-                  key={x.appRoute}
-                  path={x.appRoute}
-                  element={<MDRenderer mdContent={x.fileContent} />}
-                />
-              );
-            })}
+            <Route path="*" element={<Navigate to="/main" replace />} />
           </Routes>
         </section>
       </main>
