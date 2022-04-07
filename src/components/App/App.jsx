@@ -4,6 +4,7 @@ import NavMenu from '../NavMenu/NavMenu';
 import Footer from '../Footer/Footer';
 import { Container } from 'react-bootstrap';
 import MDRenderer from '../MDRenderer/MDRenderer';
+import routesData from '../../generated/generated';
 import css from './App.module.scss';
 
 import mdPageMain from '../../docs/Main.md';
@@ -34,6 +35,16 @@ function App() {
               path="page-another"
               element={<MDRenderer mdContent="Text to test the page content" />}
             />
+
+            {routesData.map((x) => {
+              return (
+                <Route
+                  key={x.appRoute}
+                  path={x.appRoute}
+                  element={<MDRenderer mdContent={x.fileContent} />}
+                />
+              );
+            })}
           </Routes>
         </section>
       </main>
