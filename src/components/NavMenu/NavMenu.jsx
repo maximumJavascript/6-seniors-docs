@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import mdRoutesData from '../../generated/mdRoutesData';
 
 function NavMenu({ className }) {
   const active = ({ isActive }) => ({
@@ -8,19 +9,16 @@ function NavMenu({ className }) {
   return (
     <aside className={className}>
       <div className="list-group">
-        <NavLink
-          to="/main"
-          className={`list-group-item list-group-item-action ${active}`}
-        >
-          Main Page
-        </NavLink>
-
-        <NavLink
-          to="for-student-terms"
-          className={`list-group-item list-group-item-action ${active}`}
-        >
-          Terms
-        </NavLink>
+        {mdRoutesData.map((routeData) => {
+          return (
+            <NavLink
+              to={routeData.appRoute}
+              className={`list-group-item list-group-item-action ${active}`}
+            >
+              {routeData.fileTitle}
+            </NavLink>
+          );
+        })}
 
         <NavLink
           to="page-another"

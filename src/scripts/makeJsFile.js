@@ -18,10 +18,25 @@ function getImportValue(variableName, pathName) {
 
 let importsText = '';
 
+function getTitle(content) {
+  let res = '';
+
+  for (let i = 0; ; i++) {
+    if (content[i] === '\n') break;
+    if (content[i] !== '#') res += content[i];
+  }
+
+  return res.trim();
+}
+
 const jsonStrData = files
   .map((fileName, idx) => {
     const pathCutted = fileName.replace('src/docs/', '').replace('.md', '');
     const pathCuttedNoSlash = pathCutted.replace(/[/]/g, '-');
+
+    // eslint-disable-next-line global-require,import/no-dynamic-require
+    const fileContent = fs.readFileSync(fileName).toString();
+    const fileTitle = getTitle(fileContent);
 
     const pathRouteValue = kebabCase(pathCuttedNoSlash);
     const variableName = camelCase(pathCuttedNoSlash);
@@ -33,6 +48,7 @@ const jsonStrData = files
       appRoute: pathRouteValue,
       fileSlashPath: pathCutted,
       fileUrl: constants.FILE_URL,
+      fileTitle,
       id: idx + 1,
     };
 
