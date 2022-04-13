@@ -16,12 +16,18 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "npm run generate:all && react-scripts start",
     "lint": "eslint \"./src/**/*.js{,x}\" --max-warnings=0",
-    "format": "eslint \"./src/**/*.js{,x}\" --fix"
+    "lint:fix": "eslint \"./src/**/*.js{,x}\" --fix",
+    "test": "react-scripts test",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "---------- 🎁 ----------": "",
+    "generate:all": "npm run generate:build && npm run generate:lint",
+    "generate:build": "node ./src/scripts/makeJsFile.js",
+    "generate:lint": "eslint --fix \"./src/generated/*.js\" --max-warnings=0",
+    "---------- 🪑 ----------": "",
+    "deploy": "npm run generate:all && npm run build"
   },
   "browserslist": {
     "production": [
@@ -46,6 +52,8 @@
     "eslint-config-react-app": "7.0.0",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-react": "7.29.4",
+    "glob": "^7.2.0",
+    "lodash": "^4.17.21",
     "prettier": "^2.3.1"
   }
 }

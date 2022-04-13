@@ -9,14 +9,14 @@ function NavMenu({ className }) {
     <aside className={className}>
       <div className="list-group">
         <NavLink
-          to="/"
+          to="/main"
           className={`list-group-item list-group-item-action ${active}`}
         >
           Main Page
         </NavLink>
 
         <NavLink
-          to="page-terms"
+          to="for-student-terms"
           className={`list-group-item list-group-item-action ${active}`}
         >
           Terms
