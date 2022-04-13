@@ -2,10 +2,12 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from '../Header/Header';
 import NavMenu from '../NavMenu/NavMenu';
 import Footer from '../Footer/Footer';
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 import MDRenderer from '../MDRenderer/MDRenderer';
-import mdRoutesData from '../../generated/mdRoutesData';
+import mdFilesData from '../../generated/mdRoutesData';
 import css from './App.module.scss';
+
+const mdRoutesData = mdFilesData.filter((x) => x.type === 'file');
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
       <main className="main">
         <NavMenu className={css.navMenu} />
 
-        <section>
+        <section className={css.mainContainer}>
           <Routes>
             {mdRoutesData.map((x) => {
               return (
@@ -32,7 +34,10 @@ function App() {
               element={<MDRenderer mdContent="Text to test the page content" />}
             />
 
-            <Route path="*" element={<Navigate to="/main" replace />} />
+            <Route
+              path="*"
+              element={<Navigate to={`/${mdRoutesData[0].appRoute}`} replace />}
+            />
           </Routes>
         </section>
       </main>
