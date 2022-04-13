@@ -1,61 +1,85 @@
-import forMentorReadme from '../docs/forMentor/README.md';
-import forMentorStudentInvolvement from '../docs/forMentor/studentInvolvement.md';
-import forStudentMeetingsLogging from '../docs/forStudent/meetingsLogging.md';
-import forStudentOtherMeetings from '../docs/forStudent/otherMeetings.md';
-import forStudentPolls from '../docs/forStudent/polls.md';
-import forStudentReadme from '../docs/forStudent/README.md';
-import forStudentStudentKickSystem from '../docs/forStudent/studentKickSystem.md';
-import forStudentTerms from '../docs/forStudent/terms.md';
-import main from '../docs/Main.md';
+import forStudentReadme from '../docs/1.forStudent/_README.md';
+import forStudentMeetingsLogging from '../docs/1.forStudent/meetingsLogging.md';
+import forStudentOtherMeetings from '../docs/1.forStudent/otherMeetings.md';
+import forStudentPolls from '../docs/1.forStudent/polls.md';
+import forStudentStudentKickSystem from '../docs/1.forStudent/studentKickSystem.md';
+import forStudentTerms from '../docs/1.forStudent/terms.md';
+import forMentorReadme from '../docs/2.forMentor/_README.md';
+import forMentorStudentInvolvement from '../docs/2.forMentor/studentInvolvement.md';
 
 export default [
+  { title: 'Для студента', id: 'folder_1.forStudent_1', type: 'folder' },
   {
-    appRoute: 'for-mentor-readme',
-    fileSlashPath: 'forMentor/README',
-    fileUrl: forMentorReadme,
-    id: 1,
-  },
-  {
-    appRoute: 'for-mentor-student-involvement',
-    fileSlashPath: 'forMentor/studentInvolvement',
-    fileUrl: forMentorStudentInvolvement,
-    id: 2,
-  },
-  {
-    appRoute: 'for-student-meetings-logging',
-    fileSlashPath: 'forStudent/meetingsLogging',
-    fileUrl: forStudentMeetingsLogging,
-    id: 3,
-  },
-  {
-    appRoute: 'for-student-other-meetings',
-    fileSlashPath: 'forStudent/otherMeetings',
-    fileUrl: forStudentOtherMeetings,
-    id: 4,
-  },
-  {
-    appRoute: 'for-student-polls',
-    fileSlashPath: 'forStudent/polls',
-    fileUrl: forStudentPolls,
-    id: 5,
-  },
-  {
-    appRoute: 'for-student-readme',
-    fileSlashPath: 'forStudent/README',
+    appRoute: '1-for-student-readme',
+    fileSlashPath: '1.forStudent/_README',
     fileUrl: forStudentReadme,
-    id: 6,
+    title: 'README',
+    nestLevel: 1,
+    id: '2',
+    type: 'file',
   },
   {
-    appRoute: 'for-student-student-kick-system',
-    fileSlashPath: 'forStudent/studentKickSystem',
+    appRoute: '1-for-student-meetings-logging',
+    fileSlashPath: '1.forStudent/meetingsLogging',
+    fileUrl: forStudentMeetingsLogging,
+    title: 'Логирование посещения встреч',
+    nestLevel: 1,
+    id: '3',
+    type: 'file',
+  },
+  {
+    appRoute: '1-for-student-other-meetings',
+    fileSlashPath: '1.forStudent/otherMeetings',
+    fileUrl: forStudentOtherMeetings,
+    title: 'Другие встречи',
+    nestLevel: 1,
+    id: '4',
+    type: 'file',
+  },
+  {
+    appRoute: '1-for-student-polls',
+    fileSlashPath: '1.forStudent/polls',
+    fileUrl: forStudentPolls,
+    title: 'Опросы',
+    nestLevel: 1,
+    id: '5',
+    type: 'file',
+  },
+  {
+    appRoute: '1-for-student-student-kick-system',
+    fileSlashPath: '1.forStudent/studentKickSystem',
     fileUrl: forStudentStudentKickSystem,
-    id: 7,
+    title: 'Система баллов на кик',
+    nestLevel: 1,
+    id: '6',
+    type: 'file',
   },
   {
-    appRoute: 'for-student-terms',
-    fileSlashPath: 'forStudent/terms',
+    appRoute: '1-for-student-terms',
+    fileSlashPath: '1.forStudent/terms',
     fileUrl: forStudentTerms,
-    id: 8,
+    title: 'Термины',
+    nestLevel: 1,
+    id: '7',
+    type: 'file',
   },
-  { appRoute: 'main', fileSlashPath: 'Main', fileUrl: main, id: 9 },
+  { title: 'Для ментора', id: 'folder_2.forMentor_8', type: 'folder' },
+  {
+    appRoute: '2-for-mentor-readme',
+    fileSlashPath: '2.forMentor/_README',
+    fileUrl: forMentorReadme,
+    title: 'README',
+    nestLevel: 1,
+    id: '9',
+    type: 'file',
+  },
+  {
+    appRoute: '2-for-mentor-student-involvement',
+    fileSlashPath: '2.forMentor/studentInvolvement',
+    fileUrl: forMentorStudentInvolvement,
+    title: 'Вовлеченность студента',
+    nestLevel: 1,
+    id: '10',
+    type: 'file',
+  },
 ];

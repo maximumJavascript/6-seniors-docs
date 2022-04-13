@@ -8,9 +8,11 @@ const globNestedMdFiles = '/**/*.md';
 
 const constants = {
   FILE_URL: '$FILE_URL$',
+  FOLDER_DATA_NAME: '_folderData',
 };
 
 const files = glob(pathToDocs + globNestedMdFiles, { sync: true });
+console.log(files);
 
 function getImportValue(variableName, pathName) {
   return `import ${variableName} from "${pathName}"\n`;
@@ -18,14 +20,53 @@ function getImportValue(variableName, pathName) {
 
 let importsText = '';
 
+function getTitle(content) {
+  let res = '';
+
+  for (let i = 0; ; i++) {
+    if (content[i] === '\n') break;
+    if (content[i] !== '#') res += content[i];
+  }
+
+  return res.trim();
+}
+
+const excludedFiles = new Set(['src/docs/Main.md']);
+
+// Принимается конвенция, что у нас нет вложенных папок.
+// (только 1 уровень папок).
 const jsonStrData = files
   .map((fileName, idx) => {
+    if (excludedFiles.has(fileName)) return '';
+
     const pathCutted = fileName.replace('src/docs/', '').replace('.md', '');
+    const nextId = (idx + 1).toString();
+    const fileContent = fs.readFileSync(fileName).toString();
+    const fileDataTitle = getTitle(fileContent);
+
+    if (fileName.includes(constants.FOLDER_DATA_NAME)) {
+      const splitted = pathCutted.split('/');
+      const folderPathName = pathCutted.includes('/') ? splitted[0] : '';
+
+      const folderData = {
+        title: fileDataTitle,
+        id: `folder_${folderPathName}_${nextId}`,
+        type: 'folder',
+      };
+
+      return `${JSON.stringify(folderData)}`;
+    }
+
+    //
+    // Work with file
+    //
+
     const pathCuttedNoSlash = pathCutted.replace(/[/]/g, '-');
 
     const pathRouteValue = kebabCase(pathCuttedNoSlash);
-    const variableName = camelCase(pathCuttedNoSlash);
+    const variableName = camelCase(pathCuttedNoSlash.replace(/\d/g, ''));
     const pathImportValue = `../docs/${pathCutted}.md`;
+    const nestLevel = pathCutted.includes('/') ? 1 : 0;
 
     importsText += getImportValue(variableName, pathImportValue);
 
@@ -33,7 +74,10 @@ const jsonStrData = files
       appRoute: pathRouteValue,
       fileSlashPath: pathCutted,
       fileUrl: constants.FILE_URL,
-      id: idx + 1,
+      title: fileDataTitle,
+      nestLevel,
+      id: nextId,
+      type: 'file',
     };
 
     return JSON.stringify(basicData).replace(
