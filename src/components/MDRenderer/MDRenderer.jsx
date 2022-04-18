@@ -2,11 +2,12 @@ import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import css from './MDRenderer.module.scss';
 import useTextDownloadByUrl from './useTextDownloadByUrl';
+import useMDLinks from './useMDLinks';
 import cn from 'classnames';
 
 const mdPluginsProp = [gfm];
 
-function MDContentRenderer({ mdContent, isError, isLoading }) {
+function MDStringRenderer({ mdContent, isError, isLoading }) {
   const mdContentToRender = isError
     ? '#### Error while loading markdown'
     : isLoading && !mdContent
@@ -25,26 +26,34 @@ function MDContentRenderer({ mdContent, isError, isLoading }) {
   );
 }
 
-function MDRenderer({
-  mdContent,
-  mdPageUrl,
-  VisualComponent = MDContentRenderer,
-}) {
+function MDUrlRenderer({ mdPageUrl, VisualComponent = MDStringRenderer }) {
   const { isError, isLoading, result } = useTextDownloadByUrl({
     resourceUrl: mdPageUrl,
   });
 
+  const { mdContentWithLinks, onClick } = useMDLinks({ mdContent: result });
+
+  return (
+    <div onClickCapture={onClick}>
+      <VisualComponent
+        mdContent={mdContentWithLinks}
+        isLoading={isLoading}
+        isError={isError}
+      />
+    </div>
+  );
+}
+
+function MDRenderer({
+  mdContent,
+  VisualComponent = MDStringRenderer,
+  ...rest
+}) {
   if (mdContent) {
     return <VisualComponent mdContent={mdContent} />;
   }
 
-  return (
-    <VisualComponent
-      mdContent={result}
-      isLoading={isLoading}
-      isError={isError}
-    />
-  );
+  return <MDUrlRenderer {...rest} VisualComponent={VisualComponent} />;
 }
 
 export default MDRenderer;
