@@ -32,6 +32,7 @@ function getTitle(content) {
 }
 
 const excludedFiles = new Set(['src/docs/Main.md']);
+let lastFolderId;
 
 // Принимается конвенция, что у нас нет вложенных папок.
 // (только 1 уровень папок).
@@ -47,10 +48,11 @@ const jsonStrData = files
     if (fileName.includes(constants.FOLDER_DATA_NAME)) {
       const splitted = pathCutted.split('/');
       const folderPathName = pathCutted.includes('/') ? splitted[0] : '';
+      lastFolderId = `folder_${folderPathName}_${nextId}`;
 
       const folderData = {
         title: fileDataTitle,
-        id: `folder_${folderPathName}_${nextId}`,
+        id: lastFolderId,
         type: 'folder',
       };
 
@@ -77,6 +79,7 @@ const jsonStrData = files
     const basicData = {
       appRoute: pathRouteValue,
       folderName: nestLevel ? cuttedPathSplitted[0] : undefined,
+      folderId: lastFolderId,
       fileName: nestLevel ? cuttedPathSplitted[1] : cuttedPathSplitted[0],
       fileUrl: constants.FILE_URL,
       title: fileDataTitle,

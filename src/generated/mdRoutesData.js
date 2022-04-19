@@ -12,6 +12,7 @@ export default [
   {
     appRoute: 'for-student/readme',
     folderName: '1.forStudent',
+    folderId: 'folder_1.forStudent_1',
     fileName: '_README',
     fileUrl: forStudentReadme,
     title: 'README',
@@ -22,6 +23,7 @@ export default [
   {
     appRoute: 'for-student/meetings-logging',
     folderName: '1.forStudent',
+    folderId: 'folder_1.forStudent_1',
     fileName: 'meetingsLogging',
     fileUrl: forStudentMeetingsLogging,
     title: 'Логирование посещения встреч',
@@ -32,6 +34,7 @@ export default [
   {
     appRoute: 'for-student/other-meetings',
     folderName: '1.forStudent',
+    folderId: 'folder_1.forStudent_1',
     fileName: 'otherMeetings',
     fileUrl: forStudentOtherMeetings,
     title: 'Другие встречи',
@@ -42,6 +45,7 @@ export default [
   {
     appRoute: 'for-student/polls',
     folderName: '1.forStudent',
+    folderId: 'folder_1.forStudent_1',
     fileName: 'polls',
     fileUrl: forStudentPolls,
     title: 'Опросы',
@@ -52,6 +56,7 @@ export default [
   {
     appRoute: 'for-student/student-kick-system',
     folderName: '1.forStudent',
+    folderId: 'folder_1.forStudent_1',
     fileName: 'studentKickSystem',
     fileUrl: forStudentStudentKickSystem,
     title: 'Система баллов на кик',
@@ -62,6 +67,7 @@ export default [
   {
     appRoute: 'for-student/terms',
     folderName: '1.forStudent',
+    folderId: 'folder_1.forStudent_1',
     fileName: 'terms',
     fileUrl: forStudentTerms,
     title: 'Термины',
@@ -73,6 +79,7 @@ export default [
   {
     appRoute: 'for-mentor/readme',
     folderName: '2.forMentor',
+    folderId: 'folder_2.forMentor_8',
     fileName: '_README',
     fileUrl: forMentorReadme,
     title: 'README',
@@ -83,6 +90,7 @@ export default [
   {
     appRoute: 'for-mentor/student-involvement',
     folderName: '2.forMentor',
+    folderId: 'folder_2.forMentor_8',
     fileName: 'studentInvolvement',
     fileUrl: forMentorStudentInvolvement,
     title: 'Вовлеченность студента',

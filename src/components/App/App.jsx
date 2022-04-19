@@ -4,10 +4,8 @@ import NavMenu from '../NavMenu/NavMenu';
 import Footer from '../Footer/Footer';
 import Container from 'react-bootstrap/Container';
 import MDRenderer from '../MDRenderer/MDRenderer';
-import mdFilesData from '../../generated/mdRoutesData';
+import { mdDocsFilesData } from 'src/constants';
 import css from './App.module.scss';
-
-const mdRoutesData = mdFilesData.filter((x) => x.type === 'file');
 
 function App() {
   return (
@@ -19,7 +17,7 @@ function App() {
 
         <section className={css.mainContainer}>
           <Routes>
-            {mdRoutesData.map((x) => {
+            {mdDocsFilesData.map((x) => {
               return (
                 <Route
                   key={x.appRoute}
@@ -36,7 +34,9 @@ function App() {
 
             <Route
               path="*"
-              element={<Navigate to={`/${mdRoutesData[0].appRoute}`} replace />}
+              element={
+                <Navigate to={`/${mdDocsFilesData[0].appRoute}`} replace />
+              }
             />
           </Routes>
         </section>

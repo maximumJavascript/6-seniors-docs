@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
-import mdFilesData from '../../generated/mdRoutesData';
+import { mdDocsData } from 'src/constants';
 import css from './NavMenu.module.scss';
 
 function NavMenu({ className }) {
-  const routesJsx = mdFilesData
+  const routesJsx = mdDocsData
     .map((routeData) => {
       const isNested = routeData.nestLevel > 0;
       const nestedClassName = isNested ? css.nestedItem : '';
