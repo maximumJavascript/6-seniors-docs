@@ -1,6 +1,13 @@
 const prettierConfig = require('./.prettierrc.json');
 
 module.exports = {
+	settings: {
+		'import/resolver': {
+			'node': {
+				'paths': ['./', './src']
+			}
+		},
+	},
 	extends: [
 		'react-app',
 		'react-app/jest',
@@ -58,6 +65,7 @@ module.exports = {
 		],
 		'class-methods-use-this': 0,
 		'no-nested-ternary': 0,
+		// "import/no-unresolved": 0,
 
 		// TODO fix
 		'consistent-return': 0,

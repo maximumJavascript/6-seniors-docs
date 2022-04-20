@@ -1,9 +1,8 @@
-import mdFilesData from '../../generated/mdRoutesData';
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { mdDocsFilesData } from 'src/constants';
 
 const regex = /(\[\[)([a-zа-я\s]+)\|([a-zа-я\s]+)(]])/gi;
-const mdRoutesData = mdFilesData.filter((x) => x.type === 'file');
 
 export default function useMDLinks({ mdContent }) {
   let result = mdContent;
@@ -26,7 +25,7 @@ export default function useMDLinks({ mdContent }) {
 
   if (result) {
     result = result.replace(regex, (_, __, fileName, fileTitle) => {
-      const route = mdRoutesData.find((x) => x.fileName === fileName);
+      const route = mdDocsFilesData.find((x) => x.fileName === fileName);
       if (!route) return;
 
       return `[${fileTitle}](/${route.appRoute})`;
