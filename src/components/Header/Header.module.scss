@@ -1,3 +1,41 @@
-header {
+.header {
   height: 56px;
+}
+
+.nav {}
+
+.searchResults {
+  position: absolute;
+  right: -3px;
+  top: calc(100% + 3px);
+  min-width: 140%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.searchResultItem {
+  font-size: 0.95em;
+  min-height: 40px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchFormBox {
+  position: relative;
+}
+
+.searchSelectedText {
+  background-color: #fefe54;
+
+  :global(.active) & {
+    background-color: #f19b4a;
+  }
+}
+
+.searchFolderInfo {
+  display: inline-block;
+  font-size: 0.7em;
+  margin-left: 20px;
+  opacity: 0.8;
 }
