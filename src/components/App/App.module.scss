@@ -21,9 +21,11 @@
 
 .mainContainer {
   max-width: 750px;
+  width: 60vw;
 
   @include tablet {
     flex: 1 1 auto;
+    width: auto;
   }
 
   @include mobile {
