@@ -13,8 +13,7 @@ body::before {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #f8f8f8;
-  background: url(../../assets/img/grid.png) repeat-x;
+  background: repeat-x left 55px / auto 380px #fdfdfd url(../../assets/img/grid.png);
   will-change: transform;
   z-index: -1;
 }

@@ -1,6 +1,7 @@
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { mdDocsFilesData } from 'src/constants';
+import scrollToTop from 'src/components/NavMenu/scrollToTop';
 
 const regex = /(\[\[)(.+)\|([а-яa-z\s]+)(]])/gi;
 
@@ -25,7 +26,7 @@ export default function useMDLinks({ mdContent }) {
       }
 
       navigate(href);
-      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      scrollToTop();
     },
     [navigate]
   );
