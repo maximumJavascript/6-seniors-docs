@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { mdDocsData } from 'src/constants';
 import css from './NavMenu.module.scss';
+import scrollToTop from 'src/components/NavMenu/scrollToTop';
 
 function NavMenu({ className }) {
   const routesJsx = mdDocsData
@@ -22,6 +23,7 @@ function NavMenu({ className }) {
           <NavLink
             to={routeData.appRoute}
             key={routeData.id}
+            onClick={scrollToTop}
             className={`${childClassName} list-group-item-action`}
           >
             {routeData.title}

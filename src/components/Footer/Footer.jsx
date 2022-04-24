@@ -1,14 +1,24 @@
 import { Container } from 'react-bootstrap';
 
 function Footer() {
-  const firstLine = 'Copyright © 2022, Maintained by the 6 Seniors.';
-  const secondLine = 'Documentation built with React-Markdown.';
+  const firstLine = 'Copyright © 2022, Maintained by the 6Seniors.';
 
   return (
     <footer>
       <Container className="d-flex flex-column align-items-center">
-        <p>{firstLine}</p>
-        <p>{secondLine}</p>
+        <p className="text-center">
+          {firstLine}
+
+          <br />
+
+          <a
+            href="https://github.com/ancaiman/6-seniors-docs"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+        </p>
       </Container>
     </footer>
   );

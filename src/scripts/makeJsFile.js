@@ -63,11 +63,11 @@ const jsonStrData = files
     // Work with file
     //
 
-    const pathCuttedParts = pathCutted.replace(/^\w/g, '').split('/');
+    const pathCuttedParts = pathCutted.split('/');
     const pathRouteValue = pathCuttedParts.map(kebabCase).join('/');
 
     const pathCuttedNoSlash = pathCutted.replace(/[/]/g, '-');
-    const variableName = camelCase(pathCuttedNoSlash.replace(/^\w/g, ''));
+    const variableName = camelCase(pathCuttedNoSlash.replace(/[^a-z]/gi, '-'));
 
     const pathImportValue = `../docs/${pathCutted}.md`;
     const nestLevel = pathCutted.includes('/') ? 1 : 0;
@@ -76,11 +76,15 @@ const jsonStrData = files
 
     const cuttedPathSplitted = pathCutted.split('/');
 
+    const fileNameReady = nestLevel
+      ? cuttedPathSplitted[1]
+      : cuttedPathSplitted[0];
+
     const basicData = {
       appRoute: pathRouteValue,
       folderName: nestLevel ? cuttedPathSplitted[0] : undefined,
       folderId: lastFolderId,
-      fileName: nestLevel ? cuttedPathSplitted[1] : cuttedPathSplitted[0],
+      fileName: fileNameReady,
       fileUrl: constants.FILE_URL,
       title: fileDataTitle,
       nestLevel,

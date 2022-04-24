@@ -1,0 +1,12 @@
+$mobile: 576px;
+$tablet: 768px;
+
+@mixin tablet {
+  @media (max-width: $tablet) { @content; }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) { @content; }
+}
+
+$opa: 10px;

@@ -9,7 +9,7 @@ import css from './App.module.scss';
 
 function App() {
   return (
-    <Container className="wrapper">
+    <Container fluid="md" className="wrapper">
       <Header />
 
       <main className="main">

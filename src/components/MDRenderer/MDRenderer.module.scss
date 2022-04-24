@@ -1,7 +1,8 @@
 .md {
   min-height: 60vh;
-  max-width: 800px;
   transition: opacity 0.5s linear;
+
+  img { max-width: 100%; height: auto; }
 }
 
 .transition {

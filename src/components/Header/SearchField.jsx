@@ -5,6 +5,7 @@ import { FormControl } from 'react-bootstrap';
 import { mdDocsFolderData } from 'src/constants';
 import cn from 'classnames';
 import css from './Header.module.scss';
+import scrollToTop from 'src/components/NavMenu/scrollToTop';
 
 const getClassNames = () => {
   return cn('list-group-item list-group-item-action', css.searchResultItem);
@@ -39,6 +40,7 @@ export default function SearchField() {
 
   const handleLinkClick = useCallback(() => {
     setIsResultsShowed(false);
+    scrollToTop();
   }, [setIsResultsShowed]);
 
   const doRenderSearchResults = () => {
