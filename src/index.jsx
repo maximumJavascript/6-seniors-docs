@@ -4,12 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App/App';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { basePath } from 'src/constants';
+import { HashRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename={basePath}>
+    <Router basename="">
       <App />
     </Router>
   </React.StrictMode>,
