@@ -24,7 +24,7 @@ function getTitle(content) {
   let res = '';
 
   for (let i = 0; ; i++) {
-    if (content[i] === '\n') break;
+    if (!content[i] || content[i] === '\n') break;
     if (content[i] !== '#') res += content[i];
   }
 

@@ -1,11 +1,13 @@
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
 import css from './MDRenderer.module.scss';
 import useTextDownloadByUrl from './useTextDownloadByUrl';
 import useMDLinks from './useMDLinks';
 import cn from 'classnames';
 
-const mdPluginsProp = [gfm];
+const mdPluginsGfm = [gfm];
+const mdPluginsRehype = [rehypeRaw];
 
 function MDStringRenderer({ mdContent, isError, isLoading }) {
   const mdContentToRender = isError
@@ -19,7 +21,8 @@ function MDStringRenderer({ mdContent, isError, isLoading }) {
   return (
     <ReactMarkdown
       className={cn(css.md, isLoadingNext && css.transition)}
-      remarkPlugins={mdPluginsProp}
+      remarkPlugins={mdPluginsGfm}
+      rehypePlugins={mdPluginsRehype}
     >
       {mdContentToRender}
     </ReactMarkdown>

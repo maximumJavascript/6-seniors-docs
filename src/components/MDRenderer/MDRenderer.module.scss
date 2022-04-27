@@ -3,6 +3,19 @@
   transition: opacity 0.5s linear;
 
   img { max-width: 100%; height: auto; }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 5px 10px;
+    border: 1px solid #333;
+  }
+
+  tr:nth-child(2n), thead tr {
+    background-color: #f2f2f2;
+  }
 }
 
 .transition {
