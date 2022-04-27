@@ -250,7 +250,7 @@ export default [
     folderId: 'folder_03.forMentor_21',
     fileName: '03.version',
     fileUrl: forMentorVersion,
-    title: 'Версия документации',
+    title: 'Версия документации v.0.0.6 (27.04.22)',
     nestLevel: 1,
     id: '24',
     type: 'file',
