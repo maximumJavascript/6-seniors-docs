@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { mdDocsFilesData } from 'src/constants';
 import scrollToTop from 'src/components/NavMenu/scrollToTop';
 
-const regex = /(\[\[)(.+)\|([а-яa-z\s]+)(]])/gi;
+const regex = /(\[\[)(.+)\|([а-яa-z0-9+\s]+)(]])/gi;
 
 export default function useMDLinks({ mdContent }) {
   let result = mdContent;
