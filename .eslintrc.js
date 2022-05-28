@@ -52,12 +52,7 @@ module.exports = {
 		'react/no-array-index-key': 0,
 		'react/prop-types': 0,
 		'no-underscore-dangle': 0,
-		'no-void': [
-			2,
-			{
-				allowAsStatement: true,
-			},
-		],
+		'no-void': 0,
 		'lines-between-class-members': [
 			'error',
 			'always',
@@ -65,6 +60,7 @@ module.exports = {
 		],
 		'class-methods-use-this': 0,
 		'no-nested-ternary': 0,
+		'no-console': 0,
 		// "import/no-unresolved": 0,
 
 		// TODO fix

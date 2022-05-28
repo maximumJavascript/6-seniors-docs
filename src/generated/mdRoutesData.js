@@ -3,13 +3,13 @@ import forStudentSoftSettings from '../docs/01.forStudent/02.softSettings.md';
 import forStudentTerms from '../docs/01.forStudent/03.terms.md';
 import forStudentLearningGeneral from '../docs/01.forStudent/04.learningGeneral.md';
 import forStudentHowToStudy from '../docs/01.forStudent/05.howToStudy.md';
-import forStudentEducationalMaterials from '../docs/01.forStudent/06.educationalMaterials.md';
-import forStudentStudentKickSystem from '../docs/01.forStudent/07.studentKickSystem.md';
+import forStudentRequirementsForGroup from '../docs/01.forStudent/06.requirementsForGroup.md';
+import forStudentEducationalMaterials from '../docs/01.forStudent/07.educationalMaterials.md';
 import forStudentMeetings from '../docs/01.forStudent/08.meetings.md';
 import forStudentOtherMeetings from '../docs/01.forStudent/09.otherMeetings.md';
-import forStudentPolls from '../docs/01.forStudent/10.polls.md';
-import forStudentJobInterview from '../docs/01.forStudent/11.jobInterview.md';
-import forStudentRequirementsForGroup from '../docs/01.forStudent/12.requirementsForGroup.md';
+import forStudentStudentKickSystem from '../docs/01.forStudent/10.studentKickSystem.md';
+import forStudentPolls from '../docs/01.forStudent/11.polls.md';
+import forStudentJobInterview from '../docs/01.forStudent/12.jobInterview.md';
 import tasksAndInfoReadmeTasks from '../docs/02.tasksAndInfo/01.README_tasks.md';
 import tasksAndInfoGitTasks from '../docs/02.tasksAndInfo/02.gitTasks.md';
 import tasksAndInfoArrayTasks from '../docs/02.tasksAndInfo/03.arrayTasks.md';
@@ -73,29 +73,29 @@ export default [
     folderId: 'folder_01.forStudent_1',
     fileName: '05.howToStudy',
     fileUrl: forStudentHowToStudy,
-    title: 'Как заниматься в группе без фейлов',
+    title: 'Как заниматься по процессу',
     nestLevel: 1,
     id: '6',
     type: 'file',
   },
   {
-    appRoute: '01-for-student/06-educational-materials',
+    appRoute: '01-for-student/06-requirements-for-group',
     folderName: '01.forStudent',
     folderId: 'folder_01.forStudent_1',
-    fileName: '06.educationalMaterials',
-    fileUrl: forStudentEducationalMaterials,
-    title: 'Ссылки и учебные материалы',
+    fileName: '06.requirementsForGroup',
+    fileUrl: forStudentRequirementsForGroup,
+    title: 'Требования для участника группы',
     nestLevel: 1,
     id: '7',
     type: 'file',
   },
   {
-    appRoute: '01-for-student/07-student-kick-system',
+    appRoute: '01-for-student/07-educational-materials',
     folderName: '01.forStudent',
     folderId: 'folder_01.forStudent_1',
-    fileName: '07.studentKickSystem',
-    fileUrl: forStudentStudentKickSystem,
-    title: 'Система баллов на кик',
+    fileName: '07.educationalMaterials',
+    fileUrl: forStudentEducationalMaterials,
+    title: 'Ссылки и учебные материалы',
     nestLevel: 1,
     id: '8',
     type: 'file',
@@ -123,34 +123,34 @@ export default [
     type: 'file',
   },
   {
-    appRoute: '01-for-student/10-polls',
+    appRoute: '01-for-student/10-student-kick-system',
     folderName: '01.forStudent',
     folderId: 'folder_01.forStudent_1',
-    fileName: '10.polls',
-    fileUrl: forStudentPolls,
-    title: 'Опросы',
+    fileName: '10.studentKickSystem',
+    fileUrl: forStudentStudentKickSystem,
+    title: 'Система баллов на кик',
     nestLevel: 1,
     id: '11',
     type: 'file',
   },
   {
-    appRoute: '01-for-student/11-job-interview',
+    appRoute: '01-for-student/11-polls',
     folderName: '01.forStudent',
     folderId: 'folder_01.forStudent_1',
-    fileName: '11.jobInterview',
-    fileUrl: forStudentJobInterview,
-    title: 'Вопросы для собеседований',
+    fileName: '11.polls',
+    fileUrl: forStudentPolls,
+    title: 'Опросы',
     nestLevel: 1,
     id: '12',
     type: 'file',
   },
   {
-    appRoute: '01-for-student/12-requirements-for-group',
+    appRoute: '01-for-student/12-job-interview',
     folderName: '01.forStudent',
     folderId: 'folder_01.forStudent_1',
-    fileName: '12.requirementsForGroup',
-    fileUrl: forStudentRequirementsForGroup,
-    title: 'Требования для участника группы',
+    fileName: '12.jobInterview',
+    fileUrl: forStudentJobInterview,
+    title: 'Вопросы для собеседований',
     nestLevel: 1,
     id: '13',
     type: 'file',
@@ -262,7 +262,7 @@ export default [
     folderId: 'folder_03.forMentor_22',
     fileName: '03.version',
     fileUrl: forMentorVersion,
-    title: 'Версия документации v.0.0.6 (27.04.22)',
+    title: 'Версия документации',
     nestLevel: 1,
     id: '25',
     type: 'file',

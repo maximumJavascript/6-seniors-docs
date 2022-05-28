@@ -1,6 +1,7 @@
 const glob = require('glob');
 const fs = require('fs');
 const { kebabCase, camelCase } = require('lodash');
+const replaceMdLinks = require('./replaceMdLinks');
 
 const pathToDocs = 'src/docs';
 const pathOutput = 'src/generated/mdRoutesData.js';
@@ -12,7 +13,7 @@ const constants = {
 };
 
 const files = glob(pathToDocs + globNestedMdFiles, { sync: true });
-console.log(files);
+console.log(`Найдено ${files.length} файлов`);
 
 function getImportValue(variableName, pathName) {
   return `import ${variableName} from "${pathName}"\n`;
@@ -32,6 +33,7 @@ function getTitle(content) {
 }
 
 const excludedFiles = new Set(['src/docs/Main.md']);
+const filesBasicData = [];
 let lastFolderId;
 
 // Принимается конвенция, что у нас нет вложенных папок.
@@ -92,6 +94,8 @@ const jsonStrData = files
       type: 'file',
     };
 
+    filesBasicData.push(basicData);
+
     return JSON.stringify(basicData).replace(
       `"${constants.FILE_URL}"`,
       variableName
@@ -103,3 +107,26 @@ const jsonReadyData = `export default [${jsonStrData}];`;
 const contentToWrite = `${importsText}${jsonReadyData}`;
 
 fs.writeFileSync(pathOutput, contentToWrite);
+const errors = [];
+
+files.forEach((fileName) => {
+  const fileContent = fs.readFileSync(fileName).toString();
+  try {
+    replaceMdLinks(fileContent, filesBasicData, {
+      doThrow: true,
+      warnDifferentTitle: true,
+    });
+  } catch (e) {
+    errors.push(e.message);
+  }
+});
+
+if (errors.length) {
+  console.warn('----------');
+  console.warn('----------');
+  console.warn('Ошибки:', errors);
+  console.warn('----------');
+  console.warn('----------');
+} else {
+  console.info('Ошибок не найдено');
+}
