@@ -1,7 +1,7 @@
 const glob = require('glob');
 const fs = require('fs');
 const { kebabCase, camelCase } = require('lodash');
-const replaceMdLinks = require('./replaceMdLinks');
+const validateMdLinks = require('./validateMdLinks');
 
 const pathToDocs = 'src/docs';
 const pathOutput = 'src/generated/mdRoutesData.js';
@@ -69,12 +69,14 @@ const jsonStrData = files
     const pathRouteValue = pathCuttedParts.map(kebabCase).join('/');
 
     const pathCuttedNoSlash = pathCutted.replace(/[/]/g, '-');
-    const variableName = camelCase(pathCuttedNoSlash.replace(/[^a-z]/gi, '-'));
+    const importVariableName = camelCase(
+      pathCuttedNoSlash.replace(/[^a-z]/gi, '-')
+    );
 
     const pathImportValue = `../docs/${pathCutted}.md`;
     const nestLevel = pathCutted.includes('/') ? 1 : 0;
 
-    importsText += getImportValue(variableName, pathImportValue);
+    importsText += getImportValue(importVariableName, pathImportValue);
 
     const cuttedPathSplitted = pathCutted.split('/');
 
@@ -96,9 +98,10 @@ const jsonStrData = files
 
     filesBasicData.push(basicData);
 
+    // replace string value and it's quotes "" with import variable
     return JSON.stringify(basicData).replace(
       `"${constants.FILE_URL}"`,
-      variableName
+      importVariableName
     );
   })
   .join(',');
@@ -112,10 +115,7 @@ const errors = [];
 files.forEach((fileName) => {
   const fileContent = fs.readFileSync(fileName).toString();
   try {
-    replaceMdLinks(fileContent, filesBasicData, {
-      doThrow: true,
-      warnDifferentTitle: true,
-    });
+    validateMdLinks(fileContent, filesBasicData);
   } catch (e) {
     errors.push(e.message);
   }
