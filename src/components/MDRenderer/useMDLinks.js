@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { mdDocsFilesData } from 'src/constants';
 import scrollToTop from 'src/components/NavMenu/scrollToTop';
-import replaceMdLinks from 'src/scripts/replaceMdLinks';
+import replaceMdLinks from './replaceMdLinks';
 
 export default function useMDLinks({ mdContent }) {
   let result = mdContent;
