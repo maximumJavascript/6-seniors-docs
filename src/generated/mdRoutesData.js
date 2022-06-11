@@ -20,6 +20,11 @@ import tasksAndInfoTechsForFirstJob from '../docs/02.tasksAndInfo/07.techsForFir
 import forMentorReadmeForMentor from '../docs/03.forMentor/01.README_forMentor.md';
 import forMentorStudentInvolvement from '../docs/03.forMentor/02.studentInvolvement.md';
 import forMentorVersion from '../docs/03.forMentor/03.version.md';
+import etcInfoUsefulImgs from '../docs/04.etcInfo/01.usefulImgs.md';
+import etcInfoCommunicationWithEmployer from '../docs/04.etcInfo/02.communicationWithEmployer.md';
+import etcInfoDevOpsLinux from '../docs/04.etcInfo/03.devOpsLinux.md';
+import etcInfoConcentrateOnStudy from '../docs/04.etcInfo/04.concentrateOnStudy.md';
+import etcInfoRelocation from '../docs/04.etcInfo/05.relocation.md';
 
 export default [
   { title: 'Для студента', id: 'folder_01.forStudent_1', type: 'folder' },
@@ -265,6 +270,62 @@ export default [
     title: 'Версия документации',
     nestLevel: 1,
     id: '25',
+    type: 'file',
+  },
+  { title: 'Прочая информация', id: 'folder_04.etcInfo_26', type: 'folder' },
+  {
+    appRoute: '04-etc-info/01-useful-imgs',
+    folderName: '04.etcInfo',
+    folderId: 'folder_04.etcInfo_26',
+    fileName: '01.usefulImgs',
+    fileUrl: etcInfoUsefulImgs,
+    title: 'Полезные картинки',
+    nestLevel: 1,
+    id: '27',
+    type: 'file',
+  },
+  {
+    appRoute: '04-etc-info/02-communication-with-employer',
+    folderName: '04.etcInfo',
+    folderId: 'folder_04.etcInfo_26',
+    fileName: '02.communicationWithEmployer',
+    fileUrl: etcInfoCommunicationWithEmployer,
+    title: 'Общение с HR, работодателем',
+    nestLevel: 1,
+    id: '28',
+    type: 'file',
+  },
+  {
+    appRoute: '04-etc-info/03-dev-ops-linux',
+    folderName: '04.etcInfo',
+    folderId: 'folder_04.etcInfo_26',
+    fileName: '03.devOpsLinux',
+    fileUrl: etcInfoDevOpsLinux,
+    title: 'DevOps, Linux, bash',
+    nestLevel: 1,
+    id: '29',
+    type: 'file',
+  },
+  {
+    appRoute: '04-etc-info/04-concentrate-on-study',
+    folderName: '04.etcInfo',
+    folderId: 'folder_04.etcInfo_26',
+    fileName: '04.concentrateOnStudy',
+    fileUrl: etcInfoConcentrateOnStudy,
+    title: 'Как концентрироваться на учебе',
+    nestLevel: 1,
+    id: '30',
+    type: 'file',
+  },
+  {
+    appRoute: '04-etc-info/05-relocation',
+    folderName: '04.etcInfo',
+    folderId: 'folder_04.etcInfo_26',
+    fileName: '05.relocation',
+    fileUrl: etcInfoRelocation,
+    title: 'Релокация',
+    nestLevel: 1,
+    id: '31',
     type: 'file',
   },
 ];
