@@ -11,7 +11,7 @@ function Footer() {
           <br />
           Feel free to contribute{' '}
           <a
-            href="https://github.com/ancaiman/6-seniors-docs"
+            href="https://github.com/ancaiman/6-seniors-docs/"
             target="_blank"
             rel="noreferrer"
           >

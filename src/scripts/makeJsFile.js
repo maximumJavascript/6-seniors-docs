@@ -1,6 +1,7 @@
 const glob = require('glob');
 const fs = require('fs');
 const { kebabCase, camelCase } = require('lodash');
+const validateMdLinks = require('./validateMdLinks');
 
 const pathToDocs = 'src/docs';
 const pathOutput = 'src/generated/mdRoutesData.js';
@@ -12,7 +13,7 @@ const constants = {
 };
 
 const files = glob(pathToDocs + globNestedMdFiles, { sync: true });
-console.log(files);
+console.log(`Найдено ${files.length} файлов`);
 
 function getImportValue(variableName, pathName) {
   return `import ${variableName} from "${pathName}"\n`;
@@ -32,6 +33,7 @@ function getTitle(content) {
 }
 
 const excludedFiles = new Set(['src/docs/Main.md']);
+const filesBasicData = [];
 let lastFolderId;
 
 // Принимается конвенция, что у нас нет вложенных папок.
@@ -67,12 +69,14 @@ const jsonStrData = files
     const pathRouteValue = pathCuttedParts.map(kebabCase).join('/');
 
     const pathCuttedNoSlash = pathCutted.replace(/[/]/g, '-');
-    const variableName = camelCase(pathCuttedNoSlash.replace(/[^a-z]/gi, '-'));
+    const importVariableName = camelCase(
+      pathCuttedNoSlash.replace(/[^a-z]/gi, '-')
+    );
 
     const pathImportValue = `../docs/${pathCutted}.md`;
     const nestLevel = pathCutted.includes('/') ? 1 : 0;
 
-    importsText += getImportValue(variableName, pathImportValue);
+    importsText += getImportValue(importVariableName, pathImportValue);
 
     const cuttedPathSplitted = pathCutted.split('/');
 
@@ -92,9 +96,12 @@ const jsonStrData = files
       type: 'file',
     };
 
+    filesBasicData.push(basicData);
+
+    // replace string value and it's quotes "" with import variable
     return JSON.stringify(basicData).replace(
       `"${constants.FILE_URL}"`,
-      variableName
+      importVariableName
     );
   })
   .join(',');
@@ -103,3 +110,23 @@ const jsonReadyData = `export default [${jsonStrData}];`;
 const contentToWrite = `${importsText}${jsonReadyData}`;
 
 fs.writeFileSync(pathOutput, contentToWrite);
+const errors = [];
+
+files.forEach((fileName) => {
+  const fileContent = fs.readFileSync(fileName).toString();
+  try {
+    validateMdLinks(fileContent, filesBasicData);
+  } catch (e) {
+    errors.push(e.message);
+  }
+});
+
+if (errors.length) {
+  console.warn('----------');
+  console.warn('----------');
+  console.warn('Ошибки:', errors);
+  console.warn('----------');
+  console.warn('----------');
+} else {
+  console.info('Ошибок не найдено');
+}
