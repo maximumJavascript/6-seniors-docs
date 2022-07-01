@@ -1,8 +1,8 @@
 # 6Seniors
 
 [Секретная ссылка, не нажимать!](https://maximumjavascript.github.io/6-seniors-docs/#/01-for-student/01-readme-for-student)  
-Привет! Меня зовут Макс, я Senior Frontend Developer, мне 25 лет.
 ---
+Привет! Меня зовут Макс, я Senior Frontend Developer, мне 25 лет.  
 Я являюсь основателем проекта 6Seniors.  
 Мой YouTube канал со встречами
 [maximumJavascript](https://www.youtube.com/channel/UCNj7cgRX4_ZqnT24WqJRKpA/featured]).  
