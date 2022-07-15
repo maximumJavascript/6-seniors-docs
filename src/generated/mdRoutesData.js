@@ -1,4 +1,5 @@
 import forStudentReadmeForStudent from '../docs/01.forStudent/01.README_forStudent.md';
+import forStudentMainConcepts from '../docs/01.forStudent/011.mainConcepts.md';
 import forStudentStartTeaching from '../docs/01.forStudent/02.startTeaching.md';
 import forStudentTerms from '../docs/01.forStudent/03.terms.md';
 import forStudentLearningGeneral from '../docs/01.forStudent/04.learningGeneral.md';
