@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# 6Seniors
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Секретная ссылка, не нажимать!](https://maximumjavascript.github.io/6-seniors-docs/#/01-for-student/01-readme-for-student)  
+---
+Привет! Меня зовут Макс, я Senior Frontend Developer, мне 25 лет.  
+Я являюсь основателем проекта 6Seniors.  
+Мой YouTube канал со встречами
+[maximumJavascript](https://www.youtube.com/channel/UCNj7cgRX4_ZqnT24WqJRKpA/featured]).  
+Там мы проводим стримы по теме фронтенда (далее - FE).  
+Все построено на **бесплатной основе**!  
+Нужно лишь соблюдать некоторые моменты, цель которых - держать тебя в тонусе во время обучения 😎  
+---
+Формат: интерактивный, неформальный, НЕ лекция.  
+В общем как любое общение в интернете, но с определенной темой и целью.  
+Наша **цель** - устройство Junior FE разработчиком.
 
-## Available Scripts
+Моя экспертиза:
+- HTML/CSS, и все, что связано с версткой
+- JavaScript,
+- React,
+- TypeScript,
+- Vue,
+- Jest и прочее.
 
-In the project directory, you can run:
+## Что за группа такая? 🤔
+- В группе на встречах вы будете не просто зрителем, а отвечать на вопросы по материалу и
+  задавать свои.
+- Вне встреч вы изучаете теорию и пишете код (задачи learn.javascript, codewars, кастомные задачи,
+  ваши проекты).
+- За каждые 3 недели (6 встреч) вы должны будете получить ~4 "галочки" - хорошо потрудиться и
+  подтвердить это кодом.
+- Количество слотов в группе ограничено, забиваете на учебу = вылетаете.
 
-### `npm start`
+## Где смотреть стримы? 🤔
+- Стримы проводятся где-то между 18:00 - 23:00 (МСК) в основном в ПН и ЧТ.
+- В YouTube стримы/записи -> [ссыль](https://youtube.com/channel/UCNj7cgRX4_ZqnT24WqJRKpA)
+- Раньше проводили В Discord ["Как стать программистом"](https://discord.gg/PTRqNzzxSy).
+- Сейчас планируем развиваться и на других площадках.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Как мне все это получить? 🤔
+- Документация 
+- Шаблон заявки 
+- Требования для попадания в группу 
+- А также плюшки нахождения в ней  
+можно найти перейдя по самой верхней ссылке!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Мы вас ждем!
