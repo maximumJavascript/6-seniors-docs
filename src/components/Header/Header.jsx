@@ -9,7 +9,6 @@ function Header() {
       <Navbar bg="light" expand="lg" className={cn('fixed-top', css.nav)}>
         <Container>
           <Navbar.Brand href="#">6Seniors Docs</Navbar.Brand>
-
           <SearchField />
         </Container>
       </Navbar>
