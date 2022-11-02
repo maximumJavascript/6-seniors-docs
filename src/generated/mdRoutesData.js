@@ -145,7 +145,7 @@ export default [
     folderId: 'folder_02.tasksAndInfo_10',
     fileName: '03.arrayTasks',
     fileUrl: tasksAndInfoArrayTasks,
-    title: 'Задачи на методы массивов и рекурсию',
+    title: 'Задачи',
     nestLevel: 1,
     id: '13',
     type: 'file',
