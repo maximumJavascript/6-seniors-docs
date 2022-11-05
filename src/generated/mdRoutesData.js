@@ -1,3 +1,4 @@
+import forStudentReadmeForStudent from '../docs/01.forStudent/00.README_forStudent.md';
 import forStudentMainConcepts from '../docs/01.forStudent/01.mainConcepts.md';
 import forStudentStartTeaching from '../docs/01.forStudent/02.startTeaching.md';
 import forStudentTerms from '../docs/01.forStudent/03.terms.md';
@@ -7,13 +8,12 @@ import forStudentOtherMeetings from '../docs/01.forStudent/06.otherMeetings.md';
 import forStudentPolls from '../docs/01.forStudent/07.polls.md';
 import forStudentJobInterview from '../docs/01.forStudent/08.jobInterview.md';
 import tasksAndInfoReadmeTasks from '../docs/02.tasksAndInfo/01.README_tasks.md';
-import tasksAndInfoGitTasks from '../docs/02.tasksAndInfo/02.gitTasks.md';
-import tasksAndInfoArrayTasks from '../docs/02.tasksAndInfo/03.arrayTasks.md';
-import tasksAndInfoHowFindAJob from '../docs/02.tasksAndInfo/04.howFindAJob.md';
-import tasksAndInfoCoopDevelopment from '../docs/02.tasksAndInfo/05.coopDevelopment.md';
-import tasksAndInfoSeniorityLevelsTi from '../docs/02.tasksAndInfo/06.seniorityLevelsTI.md';
-import tasksAndInfoTechsForFirstJob from '../docs/02.tasksAndInfo/07.techsForFirstJob.md';
-import tasksAndInfoEducationalMaterials from '../docs/02.tasksAndInfo/08.educationalMaterials.md';
+import tasksAndInfoTasks from '../docs/02.tasksAndInfo/02.Tasks.md';
+import tasksAndInfoHowFindAJob from '../docs/02.tasksAndInfo/03.howFindAJob.md';
+import tasksAndInfoCoopDevelopment from '../docs/02.tasksAndInfo/04.coopDevelopment.md';
+import tasksAndInfoSeniorityLevelsTi from '../docs/02.tasksAndInfo/05.seniorityLevelsTI.md';
+import tasksAndInfoTechsForFirstJob from '../docs/02.tasksAndInfo/06.techsForFirstJob.md';
+import tasksAndInfoEducationalMaterials from '../docs/02.tasksAndInfo/07.educationalMaterials.md';
 import forMentorReadmeForMentor from '../docs/03.forMentor/01.README_forMentor.md';
 import forMentorChecklistBeforeStream from '../docs/03.forMentor/02.checklistBeforeStream.md';
 import forMentorMeetingAlgorithm from '../docs/03.forMentor/03.meetingAlgorithm.md';
@@ -29,6 +29,17 @@ import etcInfoRelocation from '../docs/04.etcInfo/05.relocation.md';
 export default [
   { title: 'Для студента', id: 'folder_01.forStudent_1', type: 'folder' },
   {
+    appRoute: '01-for-student/00-readme-for-student',
+    folderName: '01.forStudent',
+    folderId: 'folder_01.forStudent_1',
+    fileName: '00.README_forStudent',
+    fileUrl: forStudentReadmeForStudent,
+    title: 'Основные принципы и оглавление',
+    nestLevel: 1,
+    id: '2',
+    type: 'file',
+  },
+  {
     appRoute: '01-for-student/01-main-concepts',
     folderName: '01.forStudent',
     folderId: 'folder_01.forStudent_1',
@@ -36,7 +47,7 @@ export default [
     fileUrl: forStudentMainConcepts,
     title: 'Основные принципы и оглавление',
     nestLevel: 1,
-    id: '2',
+    id: '3',
     type: 'file',
   },
   {
@@ -47,7 +58,7 @@ export default [
     fileUrl: forStudentStartTeaching,
     title: 'Старт обучения',
     nestLevel: 1,
-    id: '3',
+    id: '4',
     type: 'file',
   },
   {
@@ -58,7 +69,7 @@ export default [
     fileUrl: forStudentTerms,
     title: 'Термины',
     nestLevel: 1,
-    id: '4',
+    id: '5',
     type: 'file',
   },
   {
@@ -69,7 +80,7 @@ export default [
     fileUrl: forStudentLearningGeneral,
     title: 'Общие моменты по обучению',
     nestLevel: 1,
-    id: '5',
+    id: '6',
     type: 'file',
   },
   {
@@ -80,7 +91,7 @@ export default [
     fileUrl: forStudentMeetings,
     title: 'Встречи',
     nestLevel: 1,
-    id: '6',
+    id: '7',
     type: 'file',
   },
   {
@@ -91,7 +102,7 @@ export default [
     fileUrl: forStudentOtherMeetings,
     title: 'Другие встречи',
     nestLevel: 1,
-    id: '7',
+    id: '8',
     type: 'file',
   },
   {
@@ -102,7 +113,7 @@ export default [
     fileUrl: forStudentPolls,
     title: 'Опросы',
     nestLevel: 1,
-    id: '8',
+    id: '9',
     type: 'file',
   },
   {
@@ -113,48 +124,37 @@ export default [
     fileUrl: forStudentJobInterview,
     title: 'Вопросы для собеседований',
     nestLevel: 1,
-    id: '9',
+    id: '10',
     type: 'file',
   },
-  { title: 'Задачи и инфо', id: 'folder_02.tasksAndInfo_10', type: 'folder' },
+  { title: 'Задачи и инфо', id: 'folder_02.tasksAndInfo_11', type: 'folder' },
   {
     appRoute: '02-tasks-and-info/01-readme-tasks',
     folderName: '02.tasksAndInfo',
-    folderId: 'folder_02.tasksAndInfo_10',
+    folderId: 'folder_02.tasksAndInfo_11',
     fileName: '01.README_tasks',
     fileUrl: tasksAndInfoReadmeTasks,
     title: 'README Задачи и инфо',
-    nestLevel: 1,
-    id: '11',
-    type: 'file',
-  },
-  {
-    appRoute: '02-tasks-and-info/02-git-tasks',
-    folderName: '02.tasksAndInfo',
-    folderId: 'folder_02.tasksAndInfo_10',
-    fileName: '02.gitTasks',
-    fileUrl: tasksAndInfoGitTasks,
-    title: 'Общие задания',
     nestLevel: 1,
     id: '12',
     type: 'file',
   },
   {
-    appRoute: '02-tasks-and-info/03-array-tasks',
+    appRoute: '02-tasks-and-info/02-tasks',
     folderName: '02.tasksAndInfo',
-    folderId: 'folder_02.tasksAndInfo_10',
-    fileName: '03.arrayTasks',
-    fileUrl: tasksAndInfoArrayTasks,
+    folderId: 'folder_02.tasksAndInfo_11',
+    fileName: '02.Tasks',
+    fileUrl: tasksAndInfoTasks,
     title: 'Задачи',
     nestLevel: 1,
     id: '13',
     type: 'file',
   },
   {
-    appRoute: '02-tasks-and-info/04-how-find-a-job',
+    appRoute: '02-tasks-and-info/03-how-find-a-job',
     folderName: '02.tasksAndInfo',
-    folderId: 'folder_02.tasksAndInfo_10',
-    fileName: '04.howFindAJob',
+    folderId: 'folder_02.tasksAndInfo_11',
+    fileName: '03.howFindAJob',
     fileUrl: tasksAndInfoHowFindAJob,
     title: 'Как искать работу',
     nestLevel: 1,
@@ -162,10 +162,10 @@ export default [
     type: 'file',
   },
   {
-    appRoute: '02-tasks-and-info/05-coop-development',
+    appRoute: '02-tasks-and-info/04-coop-development',
     folderName: '02.tasksAndInfo',
-    folderId: 'folder_02.tasksAndInfo_10',
-    fileName: '05.coopDevelopment',
+    folderId: 'folder_02.tasksAndInfo_11',
+    fileName: '04.coopDevelopment',
     fileUrl: tasksAndInfoCoopDevelopment,
     title: 'Советы по совместной разработке',
     nestLevel: 1,
@@ -173,10 +173,10 @@ export default [
     type: 'file',
   },
   {
-    appRoute: '02-tasks-and-info/06-seniority-levels-ti',
+    appRoute: '02-tasks-and-info/05-seniority-levels-ti',
     folderName: '02.tasksAndInfo',
-    folderId: 'folder_02.tasksAndInfo_10',
-    fileName: '06.seniorityLevelsTI',
+    folderId: 'folder_02.tasksAndInfo_11',
+    fileName: '05.seniorityLevelsTI',
     fileUrl: tasksAndInfoSeniorityLevelsTi,
     title: 'Уровни владения темой на ТИ',
     nestLevel: 1,
@@ -184,10 +184,10 @@ export default [
     type: 'file',
   },
   {
-    appRoute: '02-tasks-and-info/07-techs-for-first-job',
+    appRoute: '02-tasks-and-info/06-techs-for-first-job',
     folderName: '02.tasksAndInfo',
-    folderId: 'folder_02.tasksAndInfo_10',
-    fileName: '07.techsForFirstJob',
+    folderId: 'folder_02.tasksAndInfo_11',
+    fileName: '06.techsForFirstJob',
     fileUrl: tasksAndInfoTechsForFirstJob,
     title: 'Стек для первой работы в 2022+',
     nestLevel: 1,
@@ -195,10 +195,10 @@ export default [
     type: 'file',
   },
   {
-    appRoute: '02-tasks-and-info/08-educational-materials',
+    appRoute: '02-tasks-and-info/07-educational-materials',
     folderName: '02.tasksAndInfo',
-    folderId: 'folder_02.tasksAndInfo_10',
-    fileName: '08.educationalMaterials',
+    folderId: 'folder_02.tasksAndInfo_11',
+    fileName: '07.educationalMaterials',
     fileUrl: tasksAndInfoEducationalMaterials,
     title: 'Ссылки и учебные материалы',
     nestLevel: 1,

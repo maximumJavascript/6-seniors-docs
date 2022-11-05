@@ -1,4 +1,6 @@
 @import "../App/vars.scss";
+$deep-blue : #0a58c9;
+
 
 html, body {
   height: 100%;
@@ -17,6 +19,37 @@ body::before {
   will-change: transform;
   z-index: -1;
 }
+
+
+a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: $deep-blue;
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: .1rem;
+    bottom: 0;
+    left: 0;
+    background-color: $deep-blue;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
 
 .wrapper {
   display: flex;
