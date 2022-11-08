@@ -69,3 +69,27 @@ a {
 footer {
   margin-top: 40px;
 }
+
+pre {
+  display: block;
+  width: auto;
+  max-height: 600px;
+  overflow: auto;
+  background-color: #eef6fc;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #ccc;
+  scrollbar-color: #ccc transparent;
+  margin: 20px 40px;
+  padding: 30px;
+  word-wrap: normal;
+  filter: drop-shadow(7px 5px 3px #e4e4e4);
+}
+
+pre > code {
+  display: block;
+  font-size: 1.0rem;
+  text-indent: 0;
+  color: #111;
+  white-space: inherit;
+}
