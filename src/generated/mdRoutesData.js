@@ -34,7 +34,7 @@ export default [
     folderId: 'folder_01.forStudent_1',
     fileName: '00.README_forStudent',
     fileUrl: forStudentReadmeForStudent,
-    title: 'Readme',
+    title: 'README',
     nestLevel: 1,
     id: '2',
     type: 'file',
