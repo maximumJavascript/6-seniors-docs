@@ -18,7 +18,6 @@ module.exports = {
 	ignorePatterns: [
 		'.eslintrc.js',
 	],
-	plugins: ['react', 'jest'],
 	env: {
 		browser: true,
 		es6: true,
