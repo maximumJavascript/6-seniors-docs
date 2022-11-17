@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/6-seniors-docs/static/css/main.0e1b01ef.css",
-    "main.js": "/6-seniors-docs/static/js/main.b756078b.js",
-    "static/media/02.Tasks.md": "/6-seniors-docs/static/media/02.Tasks.39e326d56ea83157166a.md",
+    "main.css": "/6-seniors-docs/static/css/main.8561aa63.css",
+    "main.js": "/6-seniors-docs/static/js/main.b87fde50.js",
+    "static/media/02.Tasks.md": "/6-seniors-docs/static/media/02.Tasks.543185450f16f4b47379.md",
     "static/media/05.meetings.md": "/6-seniors-docs/static/media/05.meetings.20cd1582848048be4ee4.md",
     "static/media/06.otherMeetings.md": "/6-seniors-docs/static/media/06.otherMeetings.ecfb3fad8e982161ffda.md",
     "static/media/07.educationalMaterials.md": "/6-seniors-docs/static/media/07.educationalMaterials.7c87b70f9ba67561d3b7.md",
     "static/media/03.terms.md": "/6-seniors-docs/static/media/03.terms.08283bb909d52cd10439.md",
+    "static/media/00.README_forStudent.md": "/6-seniors-docs/static/media/00.README_forStudent.19e34174e923aa6b5714.md",
     "static/media/04.learningGeneral.md": "/6-seniors-docs/static/media/04.learningGeneral.584c2a625b813c025a11.md",
-    "static/media/00.README_forStudent.md": "/6-seniors-docs/static/media/00.README_forStudent.f333cc776c3034404225.md",
     "static/media/01.mainConcepts.md": "/6-seniors-docs/static/media/01.mainConcepts.9437a71207aeb083c858.md",
     "static/media/05.studentInvolvement.md": "/6-seniors-docs/static/media/05.studentInvolvement.ea70e8dcf18213dc5b6e.md",
     "static/media/02.startTeaching.md": "/6-seniors-docs/static/media/02.startTeaching.12211fd4c8ac3dc45cf9.md",
@@ -32,7 +32,7 @@
     "static/media/05.relocation.md": "/6-seniors-docs/static/media/05.relocation.1b1a646494d5b100171c.md"
   },
   "entrypoints": [
-    "static/css/main.0e1b01ef.css",
-    "static/js/main.b756078b.js"
+    "static/css/main.8561aa63.css",
+    "static/js/main.b87fde50.js"
   ]
 }
