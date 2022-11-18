@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/6-seniors-docs/static/css/main.8561aa63.css",
-    "main.js": "/6-seniors-docs/static/js/main.b87fde50.js",
+    "main.css": "/6-seniors-docs/static/css/main.a3807488.css",
+    "main.js": "/6-seniors-docs/static/js/main.cb500590.js",
     "static/media/02.Tasks.md": "/6-seniors-docs/static/media/02.Tasks.543185450f16f4b47379.md",
     "static/media/05.meetings.md": "/6-seniors-docs/static/media/05.meetings.20cd1582848048be4ee4.md",
     "static/media/06.otherMeetings.md": "/6-seniors-docs/static/media/06.otherMeetings.ecfb3fad8e982161ffda.md",
+    "static/media/04.learningGeneral.md": "/6-seniors-docs/static/media/04.learningGeneral.8f885403114621e7f55b.md",
     "static/media/07.educationalMaterials.md": "/6-seniors-docs/static/media/07.educationalMaterials.7c87b70f9ba67561d3b7.md",
-    "static/media/03.terms.md": "/6-seniors-docs/static/media/03.terms.08283bb909d52cd10439.md",
+    "static/media/03.terms.md": "/6-seniors-docs/static/media/03.terms.d49418726a2c06ebc79c.md",
     "static/media/00.README_forStudent.md": "/6-seniors-docs/static/media/00.README_forStudent.19e34174e923aa6b5714.md",
-    "static/media/04.learningGeneral.md": "/6-seniors-docs/static/media/04.learningGeneral.584c2a625b813c025a11.md",
-    "static/media/01.mainConcepts.md": "/6-seniors-docs/static/media/01.mainConcepts.9437a71207aeb083c858.md",
     "static/media/05.studentInvolvement.md": "/6-seniors-docs/static/media/05.studentInvolvement.ea70e8dcf18213dc5b6e.md",
-    "static/media/02.startTeaching.md": "/6-seniors-docs/static/media/02.startTeaching.12211fd4c8ac3dc45cf9.md",
+    "static/media/01.mainConcepts.md": "/6-seniors-docs/static/media/01.mainConcepts.432c32be346a5147c150.md",
+    "static/media/02.startTeaching.md": "/6-seniors-docs/static/media/02.startTeaching.829dbaec0e76606c54bd.md",
     "static/media/06.techsForFirstJob.md": "/6-seniors-docs/static/media/06.techsForFirstJob.f786ae0c43b5fb9b58d8.md",
     "static/media/04.coopDevelopment.md": "/6-seniors-docs/static/media/04.coopDevelopment.e1523f1535dce0159e85.md",
     "static/media/04.concentrateOnStudy.md": "/6-seniors-docs/static/media/04.concentrateOnStudy.fbfdfdf1ab4e45abcb91.md",
@@ -32,7 +32,7 @@
     "static/media/05.relocation.md": "/6-seniors-docs/static/media/05.relocation.1b1a646494d5b100171c.md"
   },
   "entrypoints": [
-    "static/css/main.8561aa63.css",
-    "static/js/main.b87fde50.js"
+    "static/css/main.a3807488.css",
+    "static/js/main.cb500590.js"
   ]
 }
