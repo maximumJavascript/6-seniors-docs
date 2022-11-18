@@ -20,6 +20,14 @@ body::before {
   z-index: -1;
 }
 
+h3 {
+  margin: 20px 0 30px;
+}
+
+h4 {
+  margin: 20px 0 20px;
+}
+
 
 .wrapper {
   display: flex;
@@ -73,7 +81,7 @@ pre > code {
 .wrap_icons a {
   width: 3em;
   height: 3em;
-  
+
   &:nth-last-child(n+2) {
     margin-right: 1em;
   }

@@ -67,7 +67,7 @@ export default [
     folderId: 'folder_01.forStudent_1',
     fileName: '03.terms',
     fileUrl: forStudentTerms,
-    title: 'Термины',
+    title: 'Наши термины',
     nestLevel: 1,
     id: '5',
     type: 'file',
