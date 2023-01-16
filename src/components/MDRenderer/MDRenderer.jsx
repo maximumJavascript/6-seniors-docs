@@ -5,9 +5,32 @@ import css from './MDRenderer.module.scss';
 import useTextDownloadByUrl from './useTextDownloadByUrl';
 import useMDLinks from './useMDLinks';
 import cn from 'classnames';
+import { oneLight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
-const mdPluginsGfm = [gfm];
+const mdPluginsGfm = [gfm, { singleTilde: false }];
 const mdPluginsRehype = [rehypeRaw];
+
+const componentsDefinition = {
+  code: ({ node, inline, className, children, ...props }) => {
+    const match = /language-(\w+)/.exec(className || '');
+
+    return !inline && match ? (
+      <SyntaxHighlighter
+        style={oneLight}
+        PreTag="div"
+        language={match[1]}
+        {...props}
+      >
+        {String(children).replace(/\n$/, '')}
+      </SyntaxHighlighter>
+    ) : (
+      <code className={className} {...props}>
+        {children}
+      </code>
+    );
+  },
+};
 
 function MDStringRenderer({ mdContent, isError, isLoading }) {
   const mdContentToRender = isError
@@ -20,6 +43,7 @@ function MDStringRenderer({ mdContent, isError, isLoading }) {
 
   return (
     <ReactMarkdown
+      components={componentsDefinition}
       className={cn(css.md, isLoadingNext && css.transition)}
       remarkPlugins={mdPluginsGfm}
       rehypePlugins={mdPluginsRehype}

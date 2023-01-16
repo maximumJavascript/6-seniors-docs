@@ -50,18 +50,12 @@ footer {
 
 pre {
   display: block;
-  width: auto;
-  max-height: 600px;
-  overflow: auto;
   background-color: #eef6fc;
   border-radius: 5px;
-  border: 1px solid;
-  border-color: #ccc;
+  border: 1px solid #ccc;
   scrollbar-color: #ccc transparent;
-  margin: 20px 40px;
-  padding: 30px;
+  margin: 10px;
   word-wrap: normal;
-  filter: drop-shadow(7px 5px 3px #e4e4e4);
 }
 
 pre > code {

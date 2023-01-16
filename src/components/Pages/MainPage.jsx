@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
-
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
-
 import mainMdPage from '../../docs/Main.md';
 
 function MainPage() {
