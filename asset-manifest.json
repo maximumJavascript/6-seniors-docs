@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/6-seniors-docs/static/css/main.aeeb532d.css",
-    "main.js": "/6-seniors-docs/static/js/main.26e78f60.js",
+    "main.js": "/6-seniors-docs/static/js/main.0e1df6a4.js",
     "static/media/02.Tasks.md": "/6-seniors-docs/static/media/02.Tasks.c982b67c83533ecca8e4.md",
     "static/media/05.meetings.md": "/6-seniors-docs/static/media/05.meetings.56c05d98ed7d6969511f.md",
     "static/media/06.otherMeetings.md": "/6-seniors-docs/static/media/06.otherMeetings.a256dc398df499575890.md",
     "static/media/04.learningGeneral.md": "/6-seniors-docs/static/media/04.learningGeneral.8f885403114621e7f55b.md",
-    "static/media/07.educationalMaterials.md": "/6-seniors-docs/static/media/07.educationalMaterials.7c87b70f9ba67561d3b7.md",
+    "static/media/07.educationalMaterials.md": "/6-seniors-docs/static/media/07.educationalMaterials.c1e1987ca4766b12d688.md",
     "static/media/03.terms.md": "/6-seniors-docs/static/media/03.terms.d49418726a2c06ebc79c.md",
     "static/media/00.README_forStudent.md": "/6-seniors-docs/static/media/00.README_forStudent.470aa1a1ae9e37c954d0.md",
     "static/media/05.studentInvolvement.md": "/6-seniors-docs/static/media/05.studentInvolvement.ea70e8dcf18213dc5b6e.md",
     "static/media/01.mainConcepts.md": "/6-seniors-docs/static/media/01.mainConcepts.4cbfc206c3d4bce9f80b.md",
     "static/media/02.startTeaching.md": "/6-seniors-docs/static/media/02.startTeaching.829dbaec0e76606c54bd.md",
     "static/media/03.howFindAJob.md": "/6-seniors-docs/static/media/03.howFindAJob.e33dbfe11ba402bc806f.md",
-    "static/media/06.techsForFirstJob.md": "/6-seniors-docs/static/media/06.techsForFirstJob.f786ae0c43b5fb9b58d8.md",
+    "static/media/06.techsForFirstJob.md": "/6-seniors-docs/static/media/06.techsForFirstJob.c5829d28f374706c88ac.md",
     "static/media/04.coopDevelopment.md": "/6-seniors-docs/static/media/04.coopDevelopment.e1523f1535dce0159e85.md",
     "static/media/04.concentrateOnStudy.md": "/6-seniors-docs/static/media/04.concentrateOnStudy.fbfdfdf1ab4e45abcb91.md",
     "static/media/03.meetingAlgorithm.md": "/6-seniors-docs/static/media/03.meetingAlgorithm.ca749732824d2643d7ca.md",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.aeeb532d.css",
-    "static/js/main.26e78f60.js"
+    "static/js/main.0e1df6a4.js"
   ]
 }
