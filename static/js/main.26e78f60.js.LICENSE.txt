@@ -28,6 +28,15 @@ object-assign
  */
 
 /**
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ *
+ * @license MIT <https://opensource.org/licenses/MIT>
+ * @author Lea Verou <https://lea.verou.me>
+ * @namespace
+ * @public
+ */
+
+/**
  * React Router DOM v6.3.0
  *
  * Copyright (c) Remix Software Inc.
