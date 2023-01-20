@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/6-seniors-docs/static/css/main.aeeb532d.css",
-    "main.js": "/6-seniors-docs/static/js/main.0e1df6a4.js",
+    "main.js": "/6-seniors-docs/static/js/main.17281ab7.js",
     "static/media/02.Tasks.md": "/6-seniors-docs/static/media/02.Tasks.c982b67c83533ecca8e4.md",
     "static/media/05.meetings.md": "/6-seniors-docs/static/media/05.meetings.56c05d98ed7d6969511f.md",
-    "static/media/06.otherMeetings.md": "/6-seniors-docs/static/media/06.otherMeetings.a256dc398df499575890.md",
+    "static/media/06.otherMeetings.md": "/6-seniors-docs/static/media/06.otherMeetings.715dd580c98f8b7fc5d9.md",
     "static/media/04.learningGeneral.md": "/6-seniors-docs/static/media/04.learningGeneral.8f885403114621e7f55b.md",
     "static/media/07.educationalMaterials.md": "/6-seniors-docs/static/media/07.educationalMaterials.c1e1987ca4766b12d688.md",
     "static/media/03.terms.md": "/6-seniors-docs/static/media/03.terms.d49418726a2c06ebc79c.md",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.aeeb532d.css",
-    "static/js/main.0e1df6a4.js"
+    "static/js/main.17281ab7.js"
   ]
 }
