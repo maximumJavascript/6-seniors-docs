@@ -1,38 +1,38 @@
 {
   "files": {
     "main.css": "/6-seniors-docs/static/css/main.aeeb532d.css",
-    "main.js": "/6-seniors-docs/static/js/main.25f174e3.js",
+    "main.js": "/6-seniors-docs/static/js/main.eb8d9440.js",
     "static/media/02.Tasks.md": "/6-seniors-docs/static/media/02.Tasks.c982b67c83533ecca8e4.md",
-    "static/media/05.meetings.md": "/6-seniors-docs/static/media/05.meetings.56c05d98ed7d6969511f.md",
-    "static/media/06.otherMeetings.md": "/6-seniors-docs/static/media/06.otherMeetings.476ac1fb38b11be098e1.md",
+    "static/media/05.meetings.md": "/6-seniors-docs/static/media/05.meetings.68179358e863ddffaaee.md",
+    "static/media/06.otherMeetings.md": "/6-seniors-docs/static/media/06.otherMeetings.c2cb36a38dbb2885872a.md",
+    "static/media/04.learningGeneral.md": "/6-seniors-docs/static/media/04.learningGeneral.f82567182943ef40b4a5.md",
     "static/media/07.educationalMaterials.md": "/6-seniors-docs/static/media/07.educationalMaterials.c43e88f4b7fd2d155354.md",
-    "static/media/04.learningGeneral.md": "/6-seniors-docs/static/media/04.learningGeneral.8f885403114621e7f55b.md",
-    "static/media/03.terms.md": "/6-seniors-docs/static/media/03.terms.d49418726a2c06ebc79c.md",
-    "static/media/00.README_forStudent.md": "/6-seniors-docs/static/media/00.README_forStudent.9f11b37777a485db1617.md",
+    "static/media/03.terms.md": "/6-seniors-docs/static/media/03.terms.a96940769e58af583edd.md",
+    "static/media/00.README_forStudent.md": "/6-seniors-docs/static/media/00.README_forStudent.9576198ea6e3a1865ec2.md",
     "static/media/05.studentInvolvement.md": "/6-seniors-docs/static/media/05.studentInvolvement.ea70e8dcf18213dc5b6e.md",
     "static/media/01.mainConcepts.md": "/6-seniors-docs/static/media/01.mainConcepts.4cbfc206c3d4bce9f80b.md",
-    "static/media/02.startTeaching.md": "/6-seniors-docs/static/media/02.startTeaching.775bcb872f20de994c3b.md",
-    "static/media/03.howFindAJob.md": "/6-seniors-docs/static/media/03.howFindAJob.e33dbfe11ba402bc806f.md",
+    "static/media/02.startTeaching.md": "/6-seniors-docs/static/media/02.startTeaching.d698baef2b6bddca8211.md",
+    "static/media/03.howFindAJob.md": "/6-seniors-docs/static/media/03.howFindAJob.f99aa9dbc5089fde90c5.md",
     "static/media/06.techsForFirstJob.md": "/6-seniors-docs/static/media/06.techsForFirstJob.c5829d28f374706c88ac.md",
     "static/media/04.coopDevelopment.md": "/6-seniors-docs/static/media/04.coopDevelopment.e1523f1535dce0159e85.md",
     "static/media/04.concentrateOnStudy.md": "/6-seniors-docs/static/media/04.concentrateOnStudy.fbfdfdf1ab4e45abcb91.md",
-    "static/media/03.meetingAlgorithm.md": "/6-seniors-docs/static/media/03.meetingAlgorithm.ca749732824d2643d7ca.md",
+    "static/media/03.meetingAlgorithm.md": "/6-seniors-docs/static/media/03.meetingAlgorithm.66b7dcf9441afe0762f3.md",
     "static/media/02.checklistBeforeStream.md": "/6-seniors-docs/static/media/02.checklistBeforeStream.cb81de9f9c23af3db3c1.md",
-    "static/media/07.polls.md": "/6-seniors-docs/static/media/07.polls.24a76c6212006d1e09dd.md",
     "static/media/05.seniorityLevelsTI.md": "/6-seniors-docs/static/media/05.seniorityLevelsTI.d276b621188bf9384cff.md",
     "static/media/06.version.md": "/6-seniors-docs/static/media/06.version.16e03e8aea51c7d396f0.md",
+    "static/media/08.jobInterview.md": "/6-seniors-docs/static/media/08.jobInterview.4ec5a40761344ff7f338.md",
     "static/media/02.communicationWithEmployer.md": "/6-seniors-docs/static/media/02.communicationWithEmployer.463d0997789667b05d10.md",
-    "static/media/08.jobInterview.md": "/6-seniors-docs/static/media/08.jobInterview.72ec7bbdb1e77bb70986.md",
     "static/media/04.whyAreWeDoingThis.md": "/6-seniors-docs/static/media/04.whyAreWeDoingThis.ccd4f686c2be1e14ef02.md",
-    "index.html": "/6-seniors-docs/index.html",
     "static/media/01.README_forMentor.md": "/6-seniors-docs/static/media/01.README_forMentor.0a3266e02b4d6084660d.md",
+    "index.html": "/6-seniors-docs/index.html",
     "static/media/03.devOpsLinux.md": "/6-seniors-docs/static/media/03.devOpsLinux.349aa9f9551e3fc74325.md",
     "static/media/01.usefulImgs.md": "/6-seniors-docs/static/media/01.usefulImgs.c04b0dd4e0e88d22906d.md",
     "static/media/01.README_tasks.md": "/6-seniors-docs/static/media/01.README_tasks.c49a7a6459254a0dc9ea.md",
-    "static/media/05.relocation.md": "/6-seniors-docs/static/media/05.relocation.1b1a646494d5b100171c.md"
+    "static/media/05.relocation.md": "/6-seniors-docs/static/media/05.relocation.1b1a646494d5b100171c.md",
+    "static/media/07.polls.md": "/6-seniors-docs/static/media/07.polls.cedeba7401e42277a19f.md"
   },
   "entrypoints": [
     "static/css/main.aeeb532d.css",
-    "static/js/main.25f174e3.js"
+    "static/js/main.eb8d9440.js"
   ]
 }
